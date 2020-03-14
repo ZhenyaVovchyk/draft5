@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotBad DraftEditor</title>
+    <link rel="shortcut icon" href="icon/1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/draft.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ace.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.3.3/ace.js"></script>
+</head>
+
+<body>
+    <div class="container"></div>
+    <div class="borderMid"></div>
+    <div class="mainMid">
+        <div class="txt" id="html-editor"></div>
+    </div>
+    <div class="borderRight">
+        <p>.js</p>
+    </div>
+    <div class="mainRight">
+        <div class="txt" id="css-editor"></div>
+    </div>
+    <div class="borderLeft">
+        <p>.css</p>
+    </div>
+    <div class="mainLeft">
+        <div class="txt" id="js-editor"></div>
+    </div>
+    <div class="borderTop"></div>
+    <div class="mainTop resizable"><iframe src="https://jsconsole.com/" frameborder="0" class="consoleBottom"></iframe>
+    </div>
+    <div class="borderBottom"></div>
+    <div class="mainBottom"><iframe id="result" src="" frameborder="0" class="consoleBottom"></iframe>
+    </div>
+
+    <div class="optionWindow"></div>
+</body>
+<script src="js/ace.js"></script>
+<script src="js/draft.js"></script>
+<script src="js/draftRest.js"></script>
+<script src="js/draftResize.js"></script>
+
+</html>

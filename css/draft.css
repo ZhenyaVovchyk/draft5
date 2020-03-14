@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.container {
+    background-image: url('/img/2.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* option-window */
+
+.optionWindow {
+    width: 15vw;
+    height: 20vh;
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    background-color: seagreen;
+    display: none;
+}
+
+/* main-right */
+
+.borderRight {
+    width: 2vw;
+    height: 5.5vh;
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    z-index: 9;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.borderRight>p {
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    margin: auto;
+    padding-top: 25%;
+    cursor: pointer;
+}
+
+
+.borderRightOnClick {
+    z-index: 10;
+    background-color: chartreuse;
+}
+
+.mainRight {
+    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+    display: none;
+    z-index: 2;
+}
+
+/* main-left */
+
+.borderLeft {
+    width: 2vw;
+    height: 5.5vh;
+    position: fixed;
+    left: 0;
+    bottom: 50%;
+    z-index: 9;
+    cursor: pointer;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.borderLeft>p {
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    padding-bottom: 25%;
+    cursor: pointer;
+}
+
+
+.borderLeftOnClick {
+
+    z-index: 10;
+    background-color: chartreuse;
+    color: black
+}
+
+.mainLeft {
+    border: 1px solid black;
+    position: absolute;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+    display: none;
+    z-index: 2;
+}
+
+
+
+/* main-top */
+
+.borderTop {
+    width: 2vw;
+    height: 3vh;
+    position: fixed;
+    left: 49%;
+    z-index: 9;
+    cursor: pointer;
+    background-image: url('/icon/xconsole.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.borderTopOnClick {
+    height: 4vh;
+    width: 2vw;
+    position: fixed;
+    left: 49.2%;
+    background-image: url('/icon/guake.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainTop {
+    width: 100vw;
+    height: 45vh;
+    border: 2px solid black;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+
+/* main-bottom */
+
+.borderBottom {
+    width: 3vw;
+    height: 4.5vh;
+    border-color: red;
+    position: fixed;
+    bottom: 0;
+    left: 49%;
+    z-index: 11;
+    background-image: url('/icon/2.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainBottom {
+    width: 70vw;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    display: none;
+    z-index: 2;
+    background-color: yellow;
+}
+
+.borderBottomOnClick {
+    width: 3vw;
+    height: 4.5vh;
+    border-color: red;
+    position: fixed;
+    bottom: 0;
+    left: 49%;
+    z-index: 11;
+    background-image: url('/icon/1.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainBottomResize {
+    width: 100vw;
+    height: 1vh;
+    background-color: chartreuse;
+    position: absolute;
+
+    z-index: 9;
+}
+
+.consoleBottom {
+    width: 100vw;
+    height: 100vh;
+}
+
+#result {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding-top: 5%;
+}
+
+.res {
+    background-color: black;
+    bottom: 0;
+    left: 48%;
+    height: 4vh;
+    position: absolute;
+    border-radius: 10vh;
+
+}
+
+.resizers {
+    margin: 0 auto;
+    width: 4vw;
+    height: 4vh;
+}
+
+/* main-mid */
+
+.borderMid {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    border: 1px solid red;
+    display: none;
+}
+
+.mainMid {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    left: 15%;
+    z-index: 2;
+}
+
+/* ace-editor */
+
+#html-editor {
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    font-size: large;
+}
+
+#js-editor {
+    width: 50vw;
+    height: 100vh;
+    font-size: large;
+}
+
+#css-editor {
+    width: 50vw;
+    height: 100vh;
+    font-size: large;
+}
